@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/c/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
+    <%- include('partials/_panelhead', {bot, user, path}) %>
+    <meta charset="UTF-8">
+    <title> Taxperia Panel</title>
+   </head>
+<body>
+  
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bxs-bar-chart-square icon'></i>
+        <div class="logo_name">Taxperia</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+          <i class='bx bx-search' ></i>
+         <input type="text" placeholder="Ara...">
+         <span class="tooltip">Ara</span>
+      </li>
+      <li class="sidebar-dropdown">
+        <a href="#">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Dashboard</span>
+        </a>
+         <span class="tooltip">Dashboard</span>
+      </li>
+      <li>
+       <a href="#">
+         <i class='bx bx-user' ></i>
+         <span class="links_name">User</span>
+       </a>
+       <span class="tooltip">User</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-chat' ></i>
+         <span class="links_name">Messages</span>
+       </a>
+       <span class="tooltip">Messages</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-pie-chart-alt-2' ></i>
+         <span class="links_name">İstatistik</span>
+       </a>
+       <span class="tooltip">İstatistik</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-folder' ></i>
+         <span class="links_name">File Manager</span>
+       </a>
+       <span class="tooltip">Files</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-cart-alt' ></i>
+         <span class="links_name">Order</span>
+       </a>
+       <span class="tooltip">Order</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-heart' ></i>
+         <span class="links_name">Saved</span>
+       </a>
+       <span class="tooltip">Saved</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-cog' ></i>
+         <span class="links_name">Settings</span>
+       </a>
+       <span class="tooltip">Settings</span>
+     </li>
+     <li class="profile">
+         <div class="profile-details">
+           <img src="https://cdn.discordapp.com/avatars/<%= user.id %>/<%= user.avatar %>" alt="profileImg">
+           <div class="name_job">
+             <div class="name"><%= user.username %></div>
+             <div class="job"><%= auth %></div>
+           </div>
+         </div>
+       <a href="/logout">
+         <i class='bx bx-log-out' id="log_out" ></i> 
+       </a>
+     </li>
+    </ul>
+  </div>
+  
+  
+  
+
+  
+</body>
+</html>
